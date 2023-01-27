@@ -1,45 +1,52 @@
 {
-  "name": "greeting-suggestion",
-  "displayName": "Greeting Suggestion",
-  "description": "Get inline suggestion for greetings",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.72.0"
-  },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [
-    "onCommand:greeting-suggestion.helloWorld"
-  ],
-  "main": "./out/extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "greeting-suggestion.helloWorld",
-        "title": "Hello World"
-      }
-    ]
-  },
-  "scripts": {
-    "vscode:prepublish": "yarn run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "yarn run compile && yarn run lint",
-    "lint": "eslint src --ext ts",
-    "test": "node ./out/test/runTest.js"
-  },
-  "devDependencies": {
-    "@types/vscode": "^1.72.0",
-    "@types/glob": "^8.0.0",
-    "@types/mocha": "^10.0.0",
-    "@types/node": "16.x",
-    "@typescript-eslint/eslint-plugin": "^5.38.1",
-    "@typescript-eslint/parser": "^5.38.1",
-    "eslint": "^8.24.0",
-    "glob": "^8.0.3",
-    "mocha": "^10.0.0",
-    "typescript": "^4.8.4",
-    "@vscode/test-electron": "^2.1.5"
-  }
+	"name": "barrel-export",
+	"displayName": "Barrel Export",
+	"description": "Easily generate barrel exports for your react project",
+	"version": "0.0.1",
+	"icon": "assets/icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tirth-2001/barrel-export-vscode-extension.git"
+	},
+	"publisher": "tirthpatel",
+	"engines": {
+		"vscode": "^1.72.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"activationEvents": [
+		"onCommand:barrel-export.generate"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "barrel-export.generate",
+				"title": "Generate Barrel Export"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "yarn run compile && yarn run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js",
+		"publish": "bash tools/publish/publish.sh"
+	},
+	"devDependencies": {
+		"@types/glob": "^8.0.0",
+		"@types/mocha": "^10.0.0",
+		"@types/node": "^18.11.18",
+		"@types/vscode": "^1.72.0",
+		"@typescript-eslint/eslint-plugin": "^5.38.1",
+		"@typescript-eslint/parser": "^5.38.1",
+		"@vscode/test-electron": "^2.1.5",
+		"eslint": "^8.24.0",
+		"glob": "^8.0.3",
+		"mocha": "^10.0.0",
+		"typescript": "^4.8.4"
+	}
 }
