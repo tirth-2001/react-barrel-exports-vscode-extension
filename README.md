@@ -1,71 +1,46 @@
-# barrel-export README
+# React Barrel Export ⚙️
 
-This is the README for your extension "barrel-export". After writing up a brief description, we recommend including the following sections.
+> Following the barrel export pattern in React is a great way to organize your code. This extension will help you create barrel exports for your React components with a simple click.
 
-## Features
+## How to use extension 🤔
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+1. Open the index.js/index.ts file in the folder you want to create a barrel export for.
+2. Open the command palette by `Ctrl+Shift+P` or `Cmd+Shift+P` and search for `Generate Barrel Export`.
+3. Enter the name of component you want to create a barrel export for.
+4. A new folder will be created with the name of the component and an index.js/index.ts file will be created inside the folder.
+5. The extension will automatically import all the files in the selected folder and export them.
 
-For example if there is an image subfolder under your extension project workspace:
+## Features 🚀
 
-\!\[feature X\]\(images/feature-x.png\)
+- Create barrel export for React components
+- Separate component generation snippet for JavaScript and TypeScript
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+<!-- > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow. -->
 
-## Requirements
+## Requirements 📋
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- VS Code 1.41.0 or higher
+- React Project (JavaScript or TypeScript)
 
-## Extension Settings
+<!-- ## Known Issues 🐛
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Calling out known issues can help limit users opening duplicate issues against your extension. -->
 
-For example:
-
-This extension contributes the following settings:
-
-- `myExtension.enable`: Enable/disable this extension.
-- `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
+## Release Notes 📝
 
 Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+- Initial release of React Barrel Export
+- Create barrel export for React components
+- Separate component generation snippet for JavaScript and TypeScript
 
 ---
 
-## Following extension guidelines
+## Found bug? Have a feature request? 🪲
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-- [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-- Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-- Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-- Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+- Please open an issue on [GitHub](https://github.com/tirth-2001/react-barrel-exports-vscode-extension).
+- Or, you can also write me on [Gmail](mailto:tirthgpatel.27@gmail.com).
 
 **Enjoy!**
