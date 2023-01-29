@@ -38,7 +38,7 @@ export function activate(context: vscode.ExtensionContext) {
 					createNewComponentFile(editor, componentName, isTypescript)
 					createNewIndexFile(editor, componentName, isTypescript)
 
-					const textToInsert = `export * from './${componentName}'`
+					const textToInsert = `export * from './${componentName}'\n`
 
 					editor.edit((editBuilder) => {
 						editBuilder.insert(editor.selection.start, textToInsert)

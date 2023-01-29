@@ -15,6 +15,8 @@
 - Create barrel export for React components
 - Separate component generation snippet for JavaScript and TypeScript
 
+---
+
 <!-- > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow. -->
 
 ## Requirements 📋
@@ -36,6 +38,10 @@ Users appreciate release notes as you update your extension.
 - Create barrel export for React components
 - Separate component generation snippet for JavaScript and TypeScript
 
+### 1.0.1
+
+- Bugfix : new line issue fix in index file
+
 ---
 
 ## Found bug? Have a feature request? 🪲
@@ -43,4 +49,9 @@ Users appreciate release notes as you update your extension.
 - Please open an issue on [GitHub](https://github.com/tirth-2001/react-barrel-exports-vscode-extension).
 - Or, you can also write me on [Gmail](mailto:tirthgpatel.27@gmail.com).
 
-**Enjoy!**
+
+Created by [Tirth Patel](https://github.com/tirth-2001)
+
+[![GitHub stars](https://img.shields.io/github/stars/tirth-2001/react-barrel-exports-vscode-extension?style=social)](https://github.com/tirth-2001/react-barrel-exports-vscode-extension)
+
+**Enjoy coding!**
