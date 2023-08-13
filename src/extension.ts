@@ -53,7 +53,9 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 // This method is called when your extension is deactivated
-export function deactivate() {}
+export function deactivate() {
+	console.log('deactivated')
+}
 
 // create new folder in the same directory as the current file and name it as the component name
 const createNewFolder = (editor: vscode.TextEditor, componentName: string) => {
@@ -108,11 +110,11 @@ const generateComponentBoilerPlate = (
 	componentName: string,
 	isTypescript?: boolean
 ) => {
-	const typescriptContent = `import React from 'react'
+	const typescriptContent = `import { FC } from 'react'
 
 export interface ${componentName}Props {}
 
-export const ${componentName}: React.FC<${componentName}Props> = () => {
+export const ${componentName}: FC<${componentName}Props> = () => {
 	return <div>${componentName} works!</div>
 }`
 	const javascriptContent = `import React from 'react'
@@ -124,8 +126,8 @@ export const ${componentName} = () => {
 }
 
 const checkIsTypescriptProject = (editor: vscode.TextEditor) => {
-	return editor.document.fileName.endsWith('.ts') ||
+	return (
+		editor.document.fileName.endsWith('.ts') ||
 		editor.document.fileName.endsWith('.tsx')
-		? true
-		: false
+	)
 }

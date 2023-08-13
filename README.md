@@ -42,13 +42,16 @@ Users appreciate release notes as you update your extension.
 
 - Bugfix : new line issue fix in index file
 
+### 1.0.2
+
+- Feature : Added named import for React Function Component
+
 ---
 
 ## Found bug? Have a feature request? 🪲
 
 - Please open an issue on [GitHub](https://github.com/tirth-2001/react-barrel-exports-vscode-extension).
 - Or, you can also write me on [Gmail](mailto:tirthgpatel.27@gmail.com).
-
 
 Created by [Tirth Patel](https://github.com/tirth-2001)
 

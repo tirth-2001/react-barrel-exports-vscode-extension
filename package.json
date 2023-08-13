@@ -2,7 +2,7 @@
 	"name": "barrel-export",
 	"displayName": "React Barrel Export",
 	"description": "Easily generate barrel exports for your React project",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"icon": "assets/icon.png",
 	"repository": {
 		"type": "git",
